@@ -15,4 +15,10 @@ public class DetectCollisions : MonoBehaviour
     {
         
     }
+    //ONTriggerCollision it will remove the object and the Animal
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+        Destroy(other.gameObject);
+    }
 }
